@@ -767,6 +767,23 @@ video {
   background-size: 100%;
 }
 
+.card {
+  width: 50%;
+  text-align: center;
+}
+
+.card .bajuDepan{
+  display: none;
+}
+
+.card:hover .bajuDepan{
+  display: inline;
+}
+
+.card:hover .bajuBelakang{
+  display: none;
+}
+
 .products a {
   margin-bottom: 1rem;
 }
@@ -782,5 +799,11 @@ video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 }
