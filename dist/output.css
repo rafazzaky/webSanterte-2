@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -572,6 +572,10 @@ video {
 
 .left-0 {
   left: 0px;
+}
+
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-10 {
