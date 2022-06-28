@@ -10,13 +10,35 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <header class="absolute bg-[#1B1B1B] top-0 left-0 w-full flex justify-center items-center z-10 navbar">
-        <div class="flex justify-center font-ancient text-[#FFFFFF] p-2">
+    <header class="absolute bg-[#1B1B1B] top-0 left-0 w-full max-h-[58px] flex justify-center items-center z-10 navbar">
+        <div class="flex justify-center font-ancient text-[#FFFFFF] p-2 md:w-full md:justify-between">
             <!-- <div>
                 <img src="dist/img/hamburger.png" alt="">
             </div> -->
-            <div class="text-[28px]">
-                Santerte
+            <div class="text-[28px] flex items-center">
+                <span class="place-content-center translate-x-[16px] md:translate-x-0 md:translate-y-[2px] md:mx-8">Santerte</span>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 md:hidden">
+                    <span class="hamburger-line origin-bottom-left"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line origin-top-left"></span>
+                    
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-2 bg-[#1B1B1B] rounded-b-lg shadow-lg w-full right-0 left-0 top-full  md:block md:static md:bg-transparent md:max-w-full md:rounded-none md:shadow-none">
+                    <ul class="block divide-y divide-gray-700 md:divide-y-0 md:divide-x md:divide-dark md:flex">
+                        <li class="group">
+                            <a href="#home" class="place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-slate-200">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="#shop" class="place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-slate-200">Shop</a>
+                        </li>
+                        <li class="group">
+                            <a href="#gallery" class="place-content-center text-md text-dark py-2 mx-8 flex group-hover:text-slate-200">Gallery</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <!-- <div>
                 <img src="dist/img/user.png" alt="">
@@ -25,20 +47,22 @@
     </header>
     <!-- Navbar End -->
     <!-- Lightning Background Start -->
-    <section class="pt-[58px]">
-        <div class="relative max-h-[100vh] overflow-hidden">
-            <img class="h-[100vh] object-cover md:h-fit" src="dist/img/backLightning.jpeg" alt="">
+    <section id="home" class="pt-[58px]">
+        <div class="relative min-h-[540px] max-h-[calc(100vh-58px)] overflow-hidden">
+            <img class="min-h-[540px] h-[100vh] object-cover md:h-fit" src="dist/img/backLightning.jpeg" alt="">
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                 <div class="mb-2">
                     <span class="mb-2 font-akira text-sm text-[#070707]">What We Listen To</span>
                 </div>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent; box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.4);" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/id/playlist/santerte-playlist/pl.u-aZb0kg5uPBoxxag"></iframe>
+                <div class="min-w-[290px]">  
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent; box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.4);" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/id/playlist/santerte-playlist/pl.u-aZb0kg5uPBoxxag"></iframe>
+                </div>
             </div>
         </div>
     </section>
     <!-- Lightning Background End -->
     <!-- Section Shop Start -->
-    <section>
+    <section id="shop">
         <div class="w-full bg-[#1B1B1B] font-ancient text-[#FFFFFF] text-[28px] text-center p-2">
             Shop
         </div>
@@ -111,7 +135,7 @@
     </section>
     <!-- Section Shop End -->
     <!-- Section Gallery Start -->
-    <section>
+    <section id="gallery">
         <div class="w-full bg-[#1B1B1B] font-ancient text-[#BD00FF] text-[28px] text-center p-2">
             Gallery
         </div>
@@ -216,6 +240,7 @@
         </ul>
     </section>
     <!-- Section Footer End -->
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
     <script src="dist/script.js"></script>
 </body>
 </html>
