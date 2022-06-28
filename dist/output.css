@@ -652,16 +652,12 @@ video {
   height: 100%;
 }
 
-.max-h-\[calc\(100vh-58px\)\] {
-  max-height: calc(100vh - 58px);
-}
-
-.max-h-\[5\] {
-  max-height: 5;
-}
-
 .max-h-\[58px\] {
   max-height: 58px;
+}
+
+.max-h-\[calc\(100vh-58px\)\] {
+  max-height: calc(100vh - 58px);
 }
 
 .min-h-\[540px\] {
@@ -775,6 +771,10 @@ video {
   border-radius: 6px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -874,14 +874,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-\[72px\] {
-  padding-top: 72px;
-}
-
-.pt-\[px\] {
-  padding-top: px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -955,6 +947,18 @@ video {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_6px_6px_2px_rgba\(0\2c 0\2c 0\2c 0\.4\)\] {
+  --tw-shadow: 0px 6px 6px 2px rgba(0,0,0,0.4);
+  --tw-shadow-colored: 0px 6px 6px 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
