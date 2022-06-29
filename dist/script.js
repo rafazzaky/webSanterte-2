@@ -90,6 +90,6 @@ window.onclick = function(event) {
 $('.card').on('click', function() {
     var linkTokped = $(this).data('tokped');
     var linkShopee = $(this).data('shopee');
-    $('#bajuModal #link-tokped').attr("href", linkTokped);
-    $('#bajuModal #link-shopee').attr("href", linkShopee);
+    $('#link-tokped').attr("href", linkTokped);
+    $('#link-shopee').attr("href", linkShopee);
 });
