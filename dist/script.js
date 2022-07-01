@@ -31,12 +31,6 @@ for(let i = 0; i<menuList.length; i++){
     });
 }
 
-window.onresize = () => {
-    if ($(window).width() >= 768 && hamburger.classList.contains('hamburger-active')) {
-        hamburger.classList.toggle('hamburger-active');
-        navMenu.classList.toggle('hidden');
-    }
-}
 //Random Color for 'New' Label
 //Get the root element (For Variable)
 var r = document.querySelector(':root');
@@ -68,7 +62,7 @@ $(function() {
 let btnBaju = document.querySelectorAll('.card');
 let modalBaju = document.getElementById('bajuModal');
 let closeBaju = document.getElementById('closeBajuModal');
-console.log(btnBaju);
+
 for(let i = 0; i<btnBaju.length; i++){
     btnBaju[i].addEventListener('click', ()=>{
         modalBaju.classList.remove('hidden');
@@ -90,6 +84,8 @@ window.onclick = function(event) {
 $('.card').on('click', function() {
     var linkTokped = $(this).data('tokped');
     var linkShopee = $(this).data('shopee');
+    var image = $(this).find('.bajuBelakang').attr('src');
     $('#link-tokped').attr("href", linkTokped);
     $('#link-shopee').attr("href", linkShopee);
+    $('#fotoBajuModal').attr("src", image);
 });
