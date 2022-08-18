@@ -40,7 +40,7 @@ function changeNewLabelColor(){
 }
 setInterval(changeNewLabelColor, 250);
 
-//Href position fix
+//Navbar Href position fix
 $(function() {
     // Desired offset, in pixels
     var refOffset = -57;
